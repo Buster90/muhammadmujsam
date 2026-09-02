@@ -21,7 +21,7 @@ const PROJECTS_DATA = {
       "Fast 60 FPS rendering and smooth micro-interactions"
     ],
     architecture: "Structured using clean MVVM-inspired architecture separating UI widgets, state providers, and persistent repositories for minimal overhead and instant startup times.",
-    githubUrl: "https://github.com/muhammadmujasam",
+    githubUrl: "https://github.com/Buster90/muhammadmujsam",
     liveDemo: "#"
   },
 
@@ -42,7 +42,7 @@ const PROJECTS_DATA = {
       "High performance cross-platform compatibility across Android and iOS"
     ],
     architecture: "Built with Flutter multi-platform codebase, backed by Google Firebase services (Auth, Firestore, Cloud Functions) and integrated with mapping and geocoding REST APIs.",
-    githubUrl: "https://github.com/muhammadmujasam",
+    githubUrl: "https://github.com/Buster90/muhammadmujsam",
     liveDemo: "#"
   },
 
@@ -60,7 +60,7 @@ const PROJECTS_DATA = {
       "Robust accuracy across varying handwriting styles and stroke weights"
     ],
     architecture: "Multi-stage CV pipeline: Raw Image Input → Grayscale/Binarization → Morphological Operations → Feature Vector Extraction → Classifier Inference.",
-    githubUrl: "https://github.com/muhammadmujasam",
+    githubUrl: "https://github.com/Buster90/muhammadmujsam",
     liveDemo: "#"
   },
 
@@ -79,7 +79,7 @@ const PROJECTS_DATA = {
       "Access Control Lists (ACLs) and firewall configurations for security isolation"
     ],
     architecture: "Three-tier enterprise architecture ensuring 99.9% uptime, redundant links, and segmented broadcast domains.",
-    githubUrl: "https://github.com/muhammadmujasam",
+    githubUrl: "https://github.com/Buster90/muhammadmujsam",
     liveDemo: "#"
   },
 
@@ -98,7 +98,7 @@ const PROJECTS_DATA = {
       "Indexed primary and foreign keys for sub-millisecond query execution"
     ],
     architecture: "Relational DBMS with normalized schemas, stored procedures for automated fee calculations, and transaction isolation.",
-    githubUrl: "https://github.com/muhammadmujasam",
+    githubUrl: "https://github.com/Buster90/muhammadmujsam",
     liveDemo: "#"
   }
 };

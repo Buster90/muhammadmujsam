@@ -2,7 +2,7 @@
 
 Modern, responsive personal portfolio website for **Muhammad Mujasam**, a Flutter & Mobile App Developer with experience in cross-platform mobile engineering, Firebase, REST APIs, and database management.
 
-🔗 **Live Website**: [https://buster90.github.io](https://buster90.github.io) *(or custom domain / repository Pages URL)*
+🔗 **Live Website**: [https://buster90.github.io/muhammadmujsam/](https://buster90.github.io/muhammadmujsam/) *(or custom domain / repository Pages URL)*
 
 ---
 
