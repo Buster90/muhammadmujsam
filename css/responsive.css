@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Muhammad Mujasam — Professional Portfolio
+   Responsive & Print Stylesheet
+   ========================================================================== */
+
+/* --- Laptop & Tablet Landscape (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+    margin-inline: auto;
+  }
+
+  .hero-role {
+    justify-content: center;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+  }
+
+  .hero-tech-strip {
+    justify-content: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .featured-project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-visual-side {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding: 2rem;
+  }
+
+  .teaching-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* --- Tablet Portrait & Smaller (max-width: 768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  /* Navigation */
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-actions .btn-sm {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  /* Section Spacing */
+  section {
+    padding-block: 4rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .developer-traits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Award Card */
+  .award-spotlight-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .award-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Timeline */
+  .experience-timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 45px;
+  }
+
+  .timeline-marker {
+    left: 4px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .timeline-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .project-info-side {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .project-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .teaching-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .footer-top-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}
+
+/* --- Small Mobile Phones (max-width: 480px) --- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.15rem;
+  }
+
+  .hero-role {
+    font-size: 1.15rem;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .phone-mockup-container {
+    width: 260px;
+    height: 520px;
+  }
+
+  .floating-badge {
+    display: none; /* Keep clean on small phones to prevent overflow */
+  }
+
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .stat-number-wrapper {
+    justify-content: center;
+    min-width: auto;
+  }
+
+  .modal-dialog {
+    max-height: 95vh;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-header,
+  .modal-body {
+    padding: 1.25rem;
+  }
+
+  .resume-paper {
+    padding: 1.25rem;
+  }
+
+  .resume-header {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .resume-contacts {
+    text-align: left;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Print Stylesheet (for Resume Download / Save to PDF)
+   -------------------------------------------------------------------------- */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .bg-grid-overlay,
+  .ambient-glow,
+  .hero-section,
+  #about,
+  #skills,
+  #projects,
+  #experience,
+  #education,
+  #knowledge,
+  #awards,
+  #teaching,
+  #approach,
+  #contact,
+  .site-footer,
+  .mobile-drawer,
+  .mobile-drawer-backdrop,
+  .toast-container,
+  .modal-header .modal-close-btn,
+  .modal-header .btn {
+    display: none !important;
+  }
+
+  .modal-overlay {
+    position: static !important;
+    background: none !important;
+    backdrop-filter: none !important;
+    display: block !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    padding: 0 !important;
+  }
+
+  .modal-dialog {
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  .modal-header {
+    display: none !important;
+  }
+
+  .modal-body {
+    padding: 0 !important;
+  }
+
+  .resume-paper {
+    border: none !important;
+    padding: 0 !important;
+    color: #111827 !important;
+    background: transparent !important;
+  }
+
+  .resume-header {
+    border-bottom: 2px solid #334155 !important;
+  }
+
+  .resume-section-title {
+    color: #0369a1 !important;
+    border-bottom: 1px solid #cbd5e1 !important;
+  }
+
+  a {
+    color: #0369a1 !important;
+    text-decoration: none !important;
+  }
+}
