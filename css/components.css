@@ -58,6 +58,16 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+.logo-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--color-primary-light);
+  box-shadow: 0 4px 12px var(--color-accent-glow);
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -267,7 +277,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 1rem 0.35rem 0.45rem;
   background: var(--badge-bg);
   border: 1px solid var(--badge-border);
   border-radius: var(--radius-full);
@@ -276,6 +286,17 @@
   color: var(--badge-text);
   font-weight: 500;
   margin-bottom: 1.5rem;
+}
+
+.hero-avatar-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 1.5px solid var(--color-primary-light);
+  box-shadow: 0 0 8px var(--color-accent-glow);
+  flex-shrink: 0;
 }
 
 .status-dot {
@@ -717,9 +738,99 @@
    -------------------------------------------------------------------------- */
 .about-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  gap: 3.5rem;
+  grid-template-columns: 310px 1.1fr 0.9fr;
+  gap: 2.25rem;
   align-items: start;
+}
+
+/* Profile Photo Card */
+.about-photo-col {
+  width: 100%;
+}
+
+.about-photo-card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.15rem;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px);
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.about-photo-card:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-lg), 0 0 25px var(--color-accent-glow);
+  transform: translateY(-4px);
+}
+
+.photo-wrapper {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.about-photo-card:hover .profile-portrait-img {
+  transform: scale(1.04);
+}
+
+.photo-overlay-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: #10b981;
+}
+
+.photo-meta-card {
+  margin-top: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.photo-meta-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.photo-meta-role {
+  font-size: 0.8125rem;
+  font-family: var(--font-mono);
+  color: var(--color-primary-light);
+  font-weight: 600;
+}
+
+.photo-meta-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
 }
 
 .about-bio-text {
@@ -1980,6 +2091,17 @@ textarea.form-control {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.resume-profile-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
 }
 
 .resume-name {

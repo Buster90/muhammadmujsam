@@ -33,6 +33,11 @@
     gap: 2.5rem;
   }
 
+  .about-photo-col {
+    max-width: 340px;
+    margin-inline: auto;
+  }
+
   .featured-project-card {
     grid-template-columns: 1fr;
   }
